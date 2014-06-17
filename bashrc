@@ -35,9 +35,14 @@ export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[36m\]\w\[\033[31m\]$(__git_ps1)
 PATH=/usr/local/bin:$PATH
 export PATH
 
+# use coreutils
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+
 #colors
 export CLICOLOR=1
 
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+export JAVA_TOOL_OPTIONS="-Djava.awt.headless=true"
