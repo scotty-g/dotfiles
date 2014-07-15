@@ -1,5 +1,14 @@
 [user]
-	name = Scott Grissom
+	name = sg012265
 	email = scott.grissom@cerner.com
 [push]
 	default = nothing
+[color]
+	ui = true
+[gui]
+	diffcontext = 20
+[alias]
+	loggraph = log --graph --pretty=oneline --decorate --abbrev-commit
+	l = log --pretty=oneline --abbrev-commit --decorate
+        la = log --pretty=format:'%Cgreen%h %Creset %s %Cred %m %cn'
+	s = status
