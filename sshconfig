@@ -1,0 +1,118 @@
+# Use sg012265 user by default
+#Host *
+#User sg012265
+
+# Chef
+Host chef_dev
+    HostName ipgochefserver
+    User sg012265
+
+# Cloud machines
+Host concept_dev
+    HostName ipgoconceptsvc01
+    User sg012265
+
+Host concept1_dev
+    HostName ipgoconceptsvc01
+    User sg012265
+
+Host concept2_dev
+    HostName ipgoconceptsvc02
+    User sg012265
+
+Host concept3_newdev
+   HostName ipgoconceptsvc03
+   User sg012265
+
+Host concept4_newdev
+   HostName ipgoconceptsvc04
+   User sg012265
+
+Host concept_staging
+    HostName cerngoapp001
+    User sg012265
+
+Host concept1_staging
+    HostName cerngoapp001
+    User sg012265
+
+Host concept2_staging
+    HostName cerngoapp002
+    User sg012265
+
+Host concept3_staging
+    HostName cerngoapp003
+    User sg012265
+
+# Crawler machines
+Host crawler_provide
+    HostName ipgosyncsvc03
+    User crawler
+
+Host crawler_1201dep
+    HostName ipgosyncsvc05
+    User crawler
+
+
+# Millennium Domains
+Host 1201dep
+    HostName ip1201lr
+    User sg012265
+
+Host pcca
+    HostName ippcca01
+    User sg012265
+
+Host stgeng
+    HostName stgeng1
+    User sg012265
+
+Host sndeng
+    HostName sndeng1
+    User sg012265
+
+Host prodeng
+    HostName prdeng1
+    User sg012265
+
+Host solution
+    HostName ipaea1
+    User sg012265
+
+# Utility Nodes
+Host devutils
+    HostName ipgodevutilities01
+    User scottyg
+
+Host devmr
+    HostName ipgoutld03
+    User sg012265
+
+Host stgmr
+    HostName cerngoutl005
+    User sg012265
+
+Host nonprodmr
+    HostName kcaeonutl151
+    User sg012265
+
+Host hermesmr
+    HostName kcbdatautl210
+    User sg012265
+
+Host apollomr
+    HostName kcbdatautl216
+    User sg012265
+
+Host zeusmr
+    HostName kcbdatautl203
+    User sg012265
+
+Host chefclass
+    HostName cernerchef112.cloudapp.net
+    User cerner
+
+# internal
+Host wheat
+    HostName wheat
+    User scottyg
