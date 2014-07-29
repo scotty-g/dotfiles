@@ -12,3 +12,5 @@
 	l = log --pretty=oneline --abbrev-commit --decorate
         la = log --pretty=format:'%Cgreen%h %Creset %s %Cred %m %cn'
 	s = status
+[status]
+	displayCommentPrefix = true
