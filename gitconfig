@@ -12,5 +12,22 @@
 	l = log --pretty=oneline --abbrev-commit --decorate
         la = log --pretty=format:'%Cgreen%h %Creset %s %Cred %m %cn'
 	s = status
+	diffbc = difftool --dir-diff --no-symlinks
 [status]
 	displayCommentPrefix = true
+[diff]
+    tool = bcomp
+[difftool]
+    prompt = false
+[difftool "bcomp"]
+    trustExitCode = true
+    cmd = "/usr/local/bin/bcomp" "$LOCAL" "$REMOTE"
+[merge]
+    tool = bcomp
+[mergetool]
+    prompt = false
+	trustExitCode = true
+[mergetool "bcomp"]
+    trustExitCode = true
+    keepBackup = false
+    cmd = "/usr/local/bin/bcomp" "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
