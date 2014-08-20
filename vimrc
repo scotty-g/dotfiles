@@ -36,3 +36,6 @@ nnoremap JJJJ <Nop>
 " use :noh to remove highlight after a search
 set incsearch
 set hlsearch
+
+" add cursor line
+set cursorline
