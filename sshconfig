@@ -7,6 +7,10 @@ Host chef_dev
     HostName ipgochefserver
     User sg012265
 
+Host chef_staging
+    HostName cerngoutl001
+    User sgrissom
+
 # Cloud machines
 Host concept_dev
     HostName ipgoconceptsvc01
