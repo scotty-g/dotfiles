@@ -71,3 +71,11 @@ case "$OSTYPE" in
     echo "***Did not understand OSTYPE varible***"
     ;;
 esac
+
+# aliases
+alias mp='mvn clean package'
+alias mi='mvn clean install'
+alias mc='mvn clean compile'
+alias mt='mvn clean test'
+alias muv='mvn clean -N versions:update-child-modules -DgenerateBackupPoms=false'
+alias mvv='mvn clean verify'
