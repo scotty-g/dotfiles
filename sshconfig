@@ -11,33 +11,33 @@ Host chef_staging
     HostName cerngoutl001
     User sgrissom
 
-# Cloud machines
-Host concept_dev
+# Concept machines
+Host conceptdev
     HostName ipgoconceptsvc01
     User sg012265
 
-Host concept1_dev
+Host conceptdev1
     HostName ipgoconceptsvc01
     User sg012265
 
-Host concept2_dev
+Host conceptdev2
     HostName ipgoconceptsvc02
     User sg012265
 
-Host concept3_newdev
+Host conceptdev3
    HostName ipgoconceptsvc03
    User sg012265
 
-Host concept4_newdev
+Host conceptdev4
    HostName ipgoconceptsvc04
    User sg012265
 
 Host concept_staging
-    HostName cerngoapp001
+    HostName kc7aeonapp001
     User sg012265
 
 Host concept1_staging
-    HostName cerngoapp001
+    HostName kc7aeonapp001
     User sg012265
 
 Host concept2_staging
@@ -63,10 +63,10 @@ Host 1201dep
     HostName ip1201lr
     User sg012265
 
-Host pcca
-    HostName ippcca01
+Host deveng
+    HostName deveng1
     User sg012265
-
+    
 Host stgeng
     HostName stgeng1
     User sg012265
@@ -75,7 +75,7 @@ Host sndeng
     HostName sndeng1
     User sg012265
 
-Host prodeng
+Host prdeng
     HostName prdeng1
     User sg012265
 
@@ -83,21 +83,45 @@ Host solution
     HostName ipaea1
     User sg012265
 
+Host solgm
+    HostName ipsol1
+    User sg012265
+
+Host solgm2
+    HostName ipsol2
+    User sg012265
+
+Host 1501stpdep
+   HostName ip15depslr
+   User sg012265
+
 # Utility Nodes
 Host devutils
     HostName ipgodevutilities01
     User scottyg
 
 Host devmr
+    HostName ipgoutld06
+    User sg012265
+
+Host devmrold
     HostName ipgoutld03
     User sg012265
 
 Host stgmr
-    HostName cerngoutl005
+    HostName kc7aeonmap001
     User sg012265
 
 Host nonprodmr
     HostName kcaeonutl151
+    User sg012265
+
+Host heramr
+    HostName kcaeonutl151
+    User sg012265
+
+Host demetermr
+    HostName kcaeonutl153
     User sg012265
 
 Host hermesmr
@@ -119,4 +143,8 @@ Host chefclass
 # internal
 Host wheat
     HostName wheat
+    User scottyg
+
+Host pale
+    HostName pale
     User scottyg
